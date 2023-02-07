@@ -1,0 +1,106 @@
+/* Common Css Start */
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    width: 1170px;
+    margin: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+/* //Common Css End */
+
+/* Nav Section Css Start */
+#navigation{
+    background-color: #02918c;
+}
+#navigation div.row{
+    justify-content: space-between;
+    align-items: center;
+}
+#navigation ul li a{
+    font-size: 12px;
+    font-weight: 800;
+    color: #ffffff;
+    text-transform: uppercase;
+    padding: 10px 25px;
+    margin: 15px 0;
+    display: inline-block;
+    transition: .7s
+}
+#navigation ul li:hover a{
+    background-color: #cfc91d;
+    color: #0b1016;
+    border-radius: 20px;
+}
+/* //Nav Section Css End */
+
+/* Banner Section Css Start */
+#banner{
+    height: 728px;
+    background-image: url(../img/MYFOLIOO.jpg);
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+#banner::after{
+    content: '';
+    position: absolute;
+    background: #000000;
+    inset: 0;
+    opacity: 0.6;
+    z-index: -1;
+}
+#banner .container{
+    height: 100%;
+}
+#banner .row{
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+#banner h3{
+    font-size: 30px;
+    font-weight: 400;
+}
+#banner h1{
+    font-size: 68px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 30px;
+}
+#banner p{
+    font-size: 18px;
+}
+#banner img{
+    display: block;
+    margin:52px auto;
+}
+#banner a{
+    font-size: 14px;
+    color: #0b1016;
+    font-weight: 800;
+    text-transform: uppercase;
+    background-color: #cfc91d;
+    padding: 19px 42px;
+    display: inline-block;
+    letter-spacing: 2px;
+}
+/* //Banner Section Css End */
